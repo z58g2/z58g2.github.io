@@ -1,22 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&text=0123456789&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+
 * {
-  font-family: "DotGothic16", sans-serif;
+  font-family: 'Titillium Web', 'Zen Maru Gothic', serif;
 }
+
+:root {
+  --white: #ccc;
+  --black: #333;
+  --gray: #666;
+  --red: #933;
+  --tabsize: 768px;
+  --pcsize: 1024px;
+}
+
 body {
-  background-color: #FFDDF6;
-  color: #294278;
+  background-color: light-dark(var(--white), var(--black));
+  color: light-dark(var(--black), var(--white));
+  width: 100vw;
+  height: 100vh;
 }
+
+@media screen and (min-width: var(--tabsize)) and (max-width: calc(var(--tabsize)-1px)) {
+  body {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: var(--pcsize)) and (max-width: calc(var(--pcsize)-1px)) {
+  body {
+    font-size: 1.125em;
+  }
+}
+
 a {
-  color: #294278;
+  color: light-dark(var(--red), var(--red));
 }
-a.yn {
-  border: 1px solid #294278;
-  border-radius: 3px;
-  background-color: #FDE1EF;
+
+.box {
+  background: rgba(255, 255, 255, .2);
 }
+
 .container {
   display: grid;
   place-content: center;
-  width: 100vw;
-  height: 100vh;
+  width: 800px;
 }
