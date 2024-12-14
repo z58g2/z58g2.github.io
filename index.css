@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&text=0123456789&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
 
-* {
-  font-family: 'Titillium Web', 'Zen Maru Gothic', serif;
-}
-
 :root {
   --white: #ccc;
   --black: #333;
@@ -14,11 +10,24 @@
   --pcsize: 1024px;
 }
 
+* {
+  font-family: 'Titillium Web', 'Zen Maru Gothic', serif;
+}
+
 body {
   background-color: light-dark(var(--white), var(--black));
   color: light-dark(var(--black), var(--white));
   width: 100vw;
   height: 100vh;
+}
+
+main {
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  width: 800px;
 }
 
 @media screen and (min-width: var(--tabsize)) and (max-width: calc(var(--tabsize)-1px)) {
@@ -39,10 +48,4 @@ a {
 
 .box {
   background: rgba(255, 255, 255, .2);
-}
-
-.container {
-  display: grid;
-  place-content: center;
-  width: 800px;
 }
