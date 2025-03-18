@@ -1,0 +1,21 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 胴体（まるっとした形！） -->
+  <ellipse cx="100" cy="120" rx="50" ry="38" fill="#DE4335" stroke="black" stroke-width="4"/>
+  <!-- 目（輪郭線をちょっと太くした！） -->
+  <circle cx="80" cy="90" r="10" fill="white" stroke="black" stroke-width="3"/>
+  <circle cx="120" cy="90" r="10" fill="white" stroke="black" stroke-width="3"/>
+  <circle cx="80" cy="90" r="5" fill="black"/>
+  <circle cx="120" cy="90" r="5" fill="black"/>
+  <!-- 口（ちょっと上にして、平たくした！） -->
+  <path d="M85 105 Q100 115 115 105" fill="none" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  <!-- ハサミ（ちょっと外側に傾けたまま！） -->
+  <ellipse cx="30" cy="85" rx="15" ry="20" fill="#DE4335" stroke="black" stroke-width="4" transform="rotate(-15, 30, 85)"/>
+  <ellipse cx="170" cy="85" rx="15" ry="20" fill="#DE4335" stroke="black" stroke-width="4" transform="rotate(15, 170, 85)"/>
+  <!-- 脚（バランス調整済み！） -->
+  <ellipse cx="45" cy="145" rx="12" ry="8" fill="#DE4335" stroke="black" stroke-width="4"/>
+  <ellipse cx="155" cy="145" rx="12" ry="8" fill="#DE4335" stroke="black" stroke-width="4"/>
+  <ellipse cx="60" cy="155" rx="12" ry="8" fill="#DE4335" stroke="black" stroke-width="4"/>
+  <ellipse cx="140" cy="155" rx="12" ry="8" fill="#DE4335" stroke="black" stroke-width="4"/>
+  <ellipse cx="80" cy="160" rx="12" ry="8" fill="#DE4335" stroke="black" stroke-width="4"/>
+  <ellipse cx="120" cy="160" rx="12" ry="8" fill="#DE4335" stroke="black" stroke-width="4"/>
+</svg>
